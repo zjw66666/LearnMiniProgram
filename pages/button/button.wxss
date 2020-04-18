@@ -1,0 +1,6 @@
+/* pages/button/button.wxss */
+ .pressed {
+    background-color: red;
+    color:white;
+    border-radius: 1000px;
+ }

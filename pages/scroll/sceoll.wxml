@@ -1,0 +1,28 @@
+<!--pages/scroll/sceoll.wxml-->
+<!-- 1.水平滚动：scroll-x -->
+<!-- view是块级元素 -->
+<scroll-view class='container1' scroll-x>
+      <view wx:for="{{10}}" class='item1'>{{item}}</view>
+</scroll-view>
+
+<!-- 2.垂直滚动：scroll-y 要在包住的外层的view设置高度 -->
+<scroll-view class="container2" scroll-y>
+      <view wx:for="{{10}}" class="item2">{{item}}</view>
+</scroll-view>
+
+<!-- 3.事件监听 -->
+<!-- bindscroll 滚动时触发 -->
+<scroll-view class="container2" scroll-y bindscroll="handleScroll">
+      <view wx:for="{{10}}" class="item2">{{item}}</view>
+</scroll-view>
+<!-- bindscrolltoupper 滚动到顶部/左边触发 -->
+<!-- bindscrolltolower 滚动到底部/右边触发 -->
+
+<scroll-view class="container2" scroll-y  bindscrolltoupper="handleToupper">
+      <view wx:for="{{10}}" class="item2">{{item}}</view>
+</scroll-view>
+
+<!-- upper-threshold 距顶部/左边多远时,触发scrolltoupper 事件 -->
+<scroll-view class="container2" scroll-y upper-threshold ="{{100}}" bindscrolltoupper="handleToupper" >
+      <view wx:for="{{10}}" class="item2">{{item}}</view>
+</scroll-view>
