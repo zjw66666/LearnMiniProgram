@@ -1,0 +1,24 @@
+/* pages/scroll/sceoll.wxss */
+.container1{
+  background-color: purple;
+  white-space: nowrap;
+}
+
+.item1{
+  width: 100px;
+  height: 100px;
+  margin:20px;
+  background-color: red;
+  display: inline-block;
+}
+
+.container2{
+  background-color: orange;
+  height: 200px;
+  margin-top: 20px;
+}
+.item2{
+  height: 100px;
+  background-color: blue;
+  margin:20px;
+}
