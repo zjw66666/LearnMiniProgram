@@ -1,0 +1,7 @@
+/* pages/wxml/wxml.wxss */
+.active{
+  color:red;
+}
+.container{
+  color:green;
+}

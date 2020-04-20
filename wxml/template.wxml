@@ -1,0 +1,7 @@
+<!-- <import src="/wxml/abc.wxml"/> -->
+<include src="/wxml/abc.wxml"/>
+
+<template name="contentItem">
+        <button size='mini'>{{btnText}}</button>
+        <view>{{content}}</view>
+</template>

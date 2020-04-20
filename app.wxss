@@ -1,0 +1,7 @@
+.contenter{
+  font-size: 35px;
+  color: green;
+}
+.conter{
+  background-color: purple;
+}

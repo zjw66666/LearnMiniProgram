@@ -1,0 +1,36 @@
+<!--pages/wxss/wxss.wxml-->
+<!-- 1.行内样式 -->
+<view style="font-size:35px;color:red;">哈哈哈</view>
+<!-- 2 .页面样式-->
+<view class="box">呵呵呵</view>
+<!-- 3.全局样式 -->
+<view class="contenter">嘿嘿嘿</view>
+<!-- 4.在三种样式并存时，优先级：行内样式>页面样式>全局样式 -->
+<view class="conter">好好好</view>
+
+<!-- wxss中的单位：rpx -->
+<view class="box1"></view>
+
+<view class="box2"></view>
+
+<view class="content1">呵呵呵</view>
+<view class="content2">喵喵喵</view>
+
+<!-- 4使用官方的样式库开发一个搜索框 -->
+<view class="page__bd">
+		<view class="weui-search-bar {{inputShowed ? 'weui-search-bar_focusing' : ''}}" id="searchBar">
+			<form class="weui-search-bar__form">
+				<view class="weui-search-bar__box">
+					<i class="weui-icon-search"></i>
+                    <input type="text" class="weui-search-bar__input" placeholder="搜索" value="{{inputVal}}" focus="{{inputShowed}}" bindinput="inputTyping" />
+                    <span class="weui-icon-clear" wx:if="{{inputVal.length > 0}}" bindtap="clearInput"></span>
+				</view>
+				<label class="weui-search-bar__label" bindtap="showInput">
+					<i class="weui-icon-search"></i>
+                    <span class="weui-search-bar__text">搜索</span>
+				</label>
+			</form>
+            <view class="weui-search-bar__cancel-btn" bindtap="hideInput">取消</view>
+		</view>
+		
+	</view>
